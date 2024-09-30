@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="content">
+    <div>
+      <h1>{{ title }}</h1>
+      <input [(ngModel)]="numbers" placeholder="Enter numbers" />
+      <button (click)="crossCheck(numbers)">Calculate</button>
+      <p>Result: {{ result }}</p>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
